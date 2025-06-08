@@ -39,31 +39,7 @@ As principais funcionalidades implementadas e seu fluxo de operação são detal
     * Esta página recupera o e-mail e a data de expiração do token de autenticação armazenados no `localStorage`.
     * As informações são exibidas ao usuário.
     * Um link "Sair" permite que o usuário retorne à página de login, efetuando o logout simbólico (não há um endpoint de logout explícito, mas o retorno à página de login remove o contexto de "logado").
-
--------------------------------
-
-### Estrutura e Organização dos Arquivos
-
-A organização dos arquivos no projeto segue a seguinte estrutura:
-
-* `index.html`
-* `telaCadastro.html`
-* `telaBemVindo.html`
-* `Css/`
-    * `style.css`
-* `Js/`
-    * `script.js`
-
--------------------------------
-
-### Orientações para Ajustes e Modificações
-
-Para realizar customizações ou adaptar o projeto, considere os seguintes pontos:
-
-* **Endpoints da API**: As URLs dos serviços de autenticação e registro estão definidas no arquivo `Js/script.js`. Para integrar o projeto com uma API diferente, é necessário modificar essas URLs.
-* **Estilização Visual**: O arquivo `Css/style.css` é o ponto central para quaisquer alterações de design, layout, cores e tipografia da interface.
-* **Mensagens de Feedback**: As mensagens de sucesso e erro apresentadas ao usuário são controladas no arquivo `Js/script.js` e podem ser ajustadas conforme a necessidade.
-
+   
 -------------------------------
 
 ### Acesso ao Projeto Implantado

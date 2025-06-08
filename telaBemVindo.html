@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Acesso Autorizado</title>
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Seja Bem Vindo!</h2>
+
+    <div id="userInfo" class="info-display"></div>
+    <a href="index.html" class="action-link">Sair</a>
+  </div>
+
+  <script>
+    const email = localStorage.getItem('email');
+    const dataExpiracao = localStorage.getItem('dataExpiracao');
+
+    const container = document.getElementById('userInfo');
+
+    if (email && dataExpiracao) {
+      const data = new Date(dataExpiracao);
+      if (isNaN(data.getTime())) {
+        container.textContent = 'Data de expiração inválida.';
+      } else {
+        const dataFormatada = data.toLocaleString('pt-BR');
+        container.innerHTML = `
+          <p><strong>E-mail:</strong> ${email}</p>
+          <p><strong>Token expira em:</strong> ${dataFormatada}</p>
+        `;
+      }
+    } else {
+      container.textContent = 'Não foi possível recuperar os dados do usuário.';
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Criar conta</h2>
+
+    <form id="registerForm">
+      <input
+        type="email"
+        id="registerEmail"
+        placeholder="E-mail"
+        required>
+
+      <input
+        type="password"
+        id="registerPassword"
+        placeholder="Senha"
+        required
+        minlength="6" maxlength="50">
+
+      <input
+        type="password"
+        id="confirmPassword"
+        placeholder="Confirmar Senha"
+        required
+        minlength="6" maxlength="50">
+
+      <button type="submit">Registrar</button>
+
+      <p><a href="index.html" class="action-link">Já tem conta? <strong>Faça o Login</strong></a></p>
+
+      <p id="registerError" class="alert-message"></p>
+    </form>
+  </div>
+  <script src="Js/script.js"></script>
+</body>
+
+</html>

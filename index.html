@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Acessar Conta</h2>
+
+    <form id="accessForm">
+      <input
+        type="email"
+        id="userEmail"
+        placeholder="E-mail"
+        required>
+
+      <input
+        type="password"
+        id="userPassword"
+        placeholder="Senha"
+        required>
+
+      <button type="submit">Entrar</button>
+
+      <p class="link-options">
+        <span class="small-text">Ainda não tem uma conta ?</span>
+        <a href="telaCadastro.html" class="action-link"><strong> Crie a sua agora!</strong></a>
+      </p>
+
+      <p id="errorMessage" class="alert-message"></p>
+    </form>
+  </div>
+  <script src="Js/script.js"></script>
+</body>
+
+</html>
